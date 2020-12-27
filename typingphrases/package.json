@@ -1,0 +1,15 @@
+{
+  "name": "@raulmar/typingphrases",
+  "version": "1.0.0",
+  "description": "",
+  "main": "typingphrases.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc src/*.ts --outDir lib "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
+}
