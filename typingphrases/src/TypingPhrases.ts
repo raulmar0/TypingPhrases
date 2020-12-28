@@ -1,21 +1,18 @@
-const PHRASES = [
-  'Changing Layout...',
-  'Choosing color palette...', 
-  'Improving performace...', 
-  'Updating projects...'
-]
-
-let i = 0
+let i: number = 0
 
 class TypingPhrases {
   phraseContainer: HTMLElement
   input: string[]
   phrases: string[]
   currentPhrase: string
+  secondsPerPhrase: number
+  typingSpeed: number
 
-  constructor(input: string[]) {
+  constructor(input: string[], secondsPerPhrase: number, typingSpeed: number) {
     this.phraseContainer = document.querySelector('.phrase')
     this.input = input
+    this.secondsPerPhrase = secondsPerPhrase
+    this.typingSpeed = typingSpeed
     window.addEventListener('load', this.initPhrases())
   }
 
@@ -39,7 +36,7 @@ class TypingPhrases {
       this.currentPhrase = null
       this.phraseContainer.innerHTML = ''
       i = 0
-    }, 3000)
+    }, this.secondsPerPhrase)
   }
 
   getPhrase() {
@@ -54,10 +51,10 @@ class TypingPhrases {
       // debugger
       this.phraseContainer.innerHTML += phrase.charAt(i)
       i++
-      setTimeout(() => {this.renderLetters(phrase)},100)
+      setTimeout(() => {this.renderLetters(phrase)},this.typingSpeed)
     }
     return
   }
 }
 
-const startTyping = new TypingPhrases(PHRASES)
+export default TypingPhrases

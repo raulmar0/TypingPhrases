@@ -2,20 +2,23 @@
   "name": "raulmar-portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "./typingphrases/TypingPhrases.ts",
+  "main": "main.ts",
   "scripts": {
     "start": "parcel index.html",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc "
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "live-server": "^1.2.1",
     "parcel-bundler": "^1.12.4",
     "typescript": "^4.1.3"
   },
   "browserlist": [
     "last 1 Chrome version"
-  ]
+  ],
+  "dependencies": {
+    "@raulmar/typingphrases": "^1.0.5"
+  }
 }
