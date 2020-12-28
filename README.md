@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # ⌨ TypingPhrases
-=======
-# TypingPhrases
->>>>>>> eae541ec4875b312acacee64149c32ee95e7afcf
 > The simpliest typing effect npm package 
 -- me
 
