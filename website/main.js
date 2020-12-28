@@ -1,16 +1,9 @@
 import TypingPhrases from '@raulmar/typingphrases'
 
-// const PHRASE = [
-//   "llamada 'TypingPhrases'",
-//   "de mi nueva libreria...", 
-//   "Esto es una prueba..."
-// ]
-
-const PHRASE = [
-  "Fuera!...",
-  "Mala vibra",
-  "Fuera!...",
-  "Toxicidad"
+const PHRASES = [
+  "'TypingPhrases'",
+  "of the library...", 
+  "This is a test..."
 ]
 
-const startTyping = new TypingPhrases(PHRASE, 1000, 50)
+const startTyping = new TypingPhrases(PHRASES, 3000, 100)
