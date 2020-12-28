@@ -8,13 +8,8 @@
 
 
 ## Features
-<<<<<<< HEAD
 * Speed control 🚶🏃
 * Written with TypeScript 💙
-=======
-* Speed control
-* Written with TypeScript
->>>>>>> eae541ec4875b312acacee64149c32ee95e7afcf
 
 # Getting Started
 First of all you'll need to install Node and npm to start a project
