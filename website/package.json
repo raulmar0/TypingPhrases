@@ -19,6 +19,6 @@
     "last 1 Chrome version"
   ],
   "dependencies": {
-    "@raulmar/typingphrases": "^1.0.5"
+    "@raulmar/typingphrases": "^1.0.6"
   }
 }

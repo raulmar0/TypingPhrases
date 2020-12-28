@@ -5,13 +5,13 @@ class TypingPhrases {
   input: string[]
   phrases: string[]
   currentPhrase: string
-  secondsPerPhrase: number
+  phraseSpeed: number
   typingSpeed: number
 
-  constructor(input: string[], secondsPerPhrase: number, typingSpeed: number) {
+  constructor(input: string[], phraseSpeed: number, typingSpeed: number) {
     this.phraseContainer = document.querySelector('.phrase')
     this.input = input
-    this.secondsPerPhrase = secondsPerPhrase
+    this.phraseSpeed = phraseSpeed
     this.typingSpeed = typingSpeed
     window.addEventListener('load', this.initPhrases())
   }
@@ -36,7 +36,7 @@ class TypingPhrases {
       this.currentPhrase = null
       this.phraseContainer.innerHTML = ''
       i = 0
-    }, this.secondsPerPhrase)
+    }, this.phraseSpeed)
   }
 
   getPhrase() {
